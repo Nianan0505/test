@@ -24,9 +24,11 @@ GeRoNa：Generic Robot Navigation是一个开源的导航算法框架，可在�
 
 `roslaunch cirkit_unit03_autorun autorun_gazebo_playpen.launch `
 
-这时打开了gazebo和rviz![01](/home/yjq/图片/01.png)
+这时打开了gazebo和rviz
 
-![02](/home/yjq/图片/02.png)
+![image][https://github.com/Nianan0505/test/blob/master/img/01.png]
+
+![image][https://github.com/Nianan0505/test/blob/master/img/02.png]
 
 ## 开启定位
 
@@ -71,8 +73,6 @@ GeRoNa：Generic Robot Navigation是一个开源的导航算法框架，可在�
 
 在rviz中用2D Pose Estimate给一个初始位置
 
-![03](/home/yjq/图片/03.png)
-
 ## 开启导航
 
 GeRoNa依赖cslibs_path_planning和cslibs_utils两个包，需要下载编译：
@@ -101,8 +101,6 @@ GeRoNa依赖cslibs_path_planning和cslibs_utils两个包，需要下载编译：
 
 在rviz给一个初始位置，打开PointCloud2的/velodyne_points话题，看定位有没有偏移
 
-![04](/home/yjq/图片/04.png)
-
 然后打开一个新的窗口，当打开新窗口后要source
 
 `source devel/setup.bash`
@@ -111,12 +109,6 @@ GeRoNa依赖cslibs_path_planning和cslibs_utils两个包，需要下载编译：
 
 用2D Nav Goal给一个目标点，就开始规划路线啦
 
-![05](/home/yjq/图片/05.png)
-
 要注意当开启新的path_follower后都要重新给目标点。
 
-关于navigation_cirkit.launch，开启了high level和path_control的launch，可以把path_planner和path_follower的都加进去，四者的关系如下图：
-
-![1562741086352](/home/yjq/图片/06ng)
-
-gerona具体内容可以参考：https://github.com/cogsys-tuebingen/gerona/wiki
+关于navigation_cirkit.launch，开启了high level和path_control的launch，可以把path_planner和path_follower的都加进去，gerona具体内容可以参考：https://github.com/cogsys-tuebingen/gerona/wiki
